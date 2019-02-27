@@ -100,11 +100,9 @@ class Delivery {
   }
   
   neighborhood() {
-    return store.neighborhoods.find(
-      function(neighborhood){
+    return store.neighborhoods.find(neighborhood => {
         return neighborhood.id === this.neighborhoodId;
-      }.bind(this)
-    );
+    });
   }
   
   customer() {
