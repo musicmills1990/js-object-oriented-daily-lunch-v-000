@@ -69,10 +69,9 @@ class Meal {
   }
   
   deliveries() {
-    return store.deliveries.filter(
-      function(delivery){
+    return store.deliveries.filter(delivery => {
         return delivery.mealId === this.id;
-    }.bind(this));
+    });
   }
   
   customers() {
