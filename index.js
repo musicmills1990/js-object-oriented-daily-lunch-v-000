@@ -42,8 +42,7 @@ class Customer {
   }
   
   deliveries() {
-    return store.deliveries.filter(
-      function(delivery) {
+    return store.deliveries.filter({
         return delivery.customerId === this.id;
     });
   }
