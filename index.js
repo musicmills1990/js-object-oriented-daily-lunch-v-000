@@ -14,14 +14,13 @@ class Neighborhood {
   }
   
   deliveries() {
-    return store.deliveries.filter(){
+    return store.deliveries.filter(delivery => {
         return delivery.neighborhoodId === this.id;
     });
   }
   
   customers() {
-    return store.customers.filter(
-      function(customer){
+    return store.customers.filter(customer => {
         return customer.neighborhoodId === this.id;
      });
   }
