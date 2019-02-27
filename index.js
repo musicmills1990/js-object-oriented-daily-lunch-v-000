@@ -35,9 +35,9 @@ class Neighborhood {
 
 class Customer {
   constructor(name, neighborhoodId){
-    this.name = name
-    this.id = ++customerId
-    this.neighborhoodId = neighborhoodId
+    this.name = name;
+    this.id = ++customerId;
+    this.neighborhoodId = neighborhoodId;
     store.customers.push(this);
   }
   
@@ -62,9 +62,9 @@ class Customer {
 
 class Meal {
   constructor(title, price){
-    this.title = title
-    this.price = price
-    this.id = ++mealId
+    this.title = title;
+    this.price = price;
+    this.id = ++mealId;
     store.meals.push(this);
   }
   
@@ -84,7 +84,7 @@ class Meal {
 static byPrice() {
     return store.meals.sort(
       function(mealOne, mealTwo) {
-      return mealTwo.price - mealOne.price
+      return mealTwo.price - mealOne.price;
     });
   }
 }
