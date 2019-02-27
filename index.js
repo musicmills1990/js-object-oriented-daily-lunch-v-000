@@ -32,7 +32,7 @@ class Neighborhood {
       function(delivery) {
         return delivery.meal();
       });
-        return [...(new Set(mealArr.map(({ mealId }) => mealId)))];
+        return [...(new Set(orderedMeals.map(({ mealId }) => mealId)))];
     }
   }
 
