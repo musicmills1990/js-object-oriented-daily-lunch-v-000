@@ -14,8 +14,7 @@ class Neighborhood {
   }
   
   deliveries() {
-    return store.deliveries.filter(
-      function(delivery){
+    return store.deliveries.filter(){
         return delivery.neighborhoodId === this.id;
     });
   }
