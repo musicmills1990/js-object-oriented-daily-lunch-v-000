@@ -26,7 +26,7 @@ class Neighborhood {
   }
   
   meals() {
-    let orderedMeals = this.deliveries().map({
+    let orderedMeals = this.deliveries().filter(delivery => {
         return delivery.meal();
       });
         return [...(new Set(orderedMeals.map(({ mealId }) => mealId)))];
