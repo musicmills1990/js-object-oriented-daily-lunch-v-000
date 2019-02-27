@@ -32,12 +32,8 @@ class Neighborhood {
       function(delivery) {
         return delivery.meal();
       });
-      return orderedMeals.filter(
-        function(value, index, currentMeal) {
-          return currentMeal.indexOf(value) === index;
-          
-        });
-      }
+        return [...(new Set(mealArr.map(({ mealId }) => mealId)))];
+    }
   }
 
 class Customer {
